@@ -1,0 +1,35 @@
+.pill {
+  display: inline-block;
+
+  label {
+    display: block;
+    font-size: $font-size-sm;
+    line-height: $line-height-tight;
+    border-radius: $radius-size-none;
+    padding: $spacing-squish-size-xs-stack;
+    white-space: nowrap;
+
+    font-weight: $font-weight-medium;
+    color: $neutral-color-5;
+    background-color: $neutral-color-3;
+    border: $border-size-hairline solid $neutral-color-2;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  input {
+    opacity: 0;
+    position: absolute;
+    left: -9999px;
+  }
+
+  input:checked + label {
+    color: $neutral-color-1;
+    background-color: $neutral-color-5;
+
+    svg {
+      color: $brand-color-primary-3;
+    }
+  }
+}

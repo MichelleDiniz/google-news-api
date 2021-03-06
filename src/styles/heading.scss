@@ -1,0 +1,32 @@
+.heading {
+  line-height: $line-height-distant;
+  font-weight: $font-weight-bold;
+  margin-bottom: $spacing-size-xxs;
+}
+
+.heading-sm {
+  @extend .heading;
+  font-family: $font-family-highlight;
+  font-size: $font-size-lg;
+  color: $neutral-color-1;
+}
+
+.heading-md {
+  @extend .heading;
+  font-size: $font-size-xl;
+  color: $neutral-color-5;
+}
+
+.heading-lg {
+  @extend .heading;
+  font-size: $font-size-xxl;
+  color: $neutral-color-5;
+}
+
+.subtitle {
+  font-size: $font-size-md;
+  line-height: $line-height-medium;
+  font-family: $font-family-highlight;
+  font-weight: $font-weight-medium;
+  color: $neutral-color-2;
+}

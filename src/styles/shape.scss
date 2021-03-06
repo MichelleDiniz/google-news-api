@@ -1,0 +1,12 @@
+.shape {
+  border-radius: $radius-size-none;
+  padding: $spacing-size-xxs;
+  border-width: $border-size-thin;
+  border-color: $neutral-color-4;
+  background-color: $neutral-color-5;
+  box-sizing: border-box;
+
+  @media all and (min-width: 769px) {
+    padding: $spacing-size-lg;
+  }
+}

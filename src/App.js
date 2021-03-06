@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
+import './App.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faNewspaper } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app full-width">
+      <BrowserRouter>
+        <header className="header">
+          <h1 className="heading-lg"><FontAwesomeIcon icon={faNewspaper} /> 4U News</h1>
+        </header>
+        <main className="container">
+          <Switch>
+            <Route path="/" component={Home} exact />
+            <Route component={NotFound} />
+          </Switch>
+        </main>
+        <footer className="footer">
+          Michelle Diniz | Meiuca Test | 2021
+        </footer>
+      </BrowserRouter>
     </div>
   );
 }
