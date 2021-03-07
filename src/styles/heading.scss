@@ -6,8 +6,8 @@
 
 .heading-sm {
   @extend .heading;
-  font-family: $font-family-highlight;
   font-size: $font-size-lg;
+  font-family: $font-family-highlight;
   color: $neutral-color-1;
 }
 

@@ -29,7 +29,7 @@
     }
   }
 
-  @media all and (min-width: 1024px) {
+  @media all and (min-width: 1200px) {
     $md-column: calc(33.333333% - #{$spacing-size-xxs/1.5});
 
     grid-template-columns: repeat(auto-fill, #{$md-column});
