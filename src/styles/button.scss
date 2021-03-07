@@ -4,11 +4,11 @@
   border-radius: $radius-size-none;
   padding: $spacing-squish-size-xs-stack;
 
+  font-family: $font-family-highlight;
   font-weight: $font-weight-medium;
   color: $neutral-color-5;
   background-color: $brand-color-primary-3;
   text-decoration: none;
-  text-align: center;
 
   &:hover {
     background-color: $brand-color-primary-2;
