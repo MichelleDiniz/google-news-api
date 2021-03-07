@@ -40,4 +40,3 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 This project uses Design Tokens. If you need to update scss variables, change de `src/design-token/properties/tokens.json` file and then run
 
 ### `style-dictionary build`
-
